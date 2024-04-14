@@ -1,0 +1,15 @@
+.logout {
+    /* background-color: #e4e0e0; */
+    /* color: rgb(10, 10, 10); */
+    background-color: transparent;
+    border: none;
+    color: #ED7014;
+    font-weight: bold; 
+    font-size: large;
+  }
+  .logout:focus,
+.logout:hover,
+.logout:active {
+  outline: none;
+  box-shadow: none;
+}

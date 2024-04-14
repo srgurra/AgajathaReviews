@@ -1,0 +1,19 @@
+<!-- movies/templates/movies/movie_list.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Movie Reviews</h1>
+  
+  <section>
+    {% for review in reviews %}
+      <div class="review">
+        <h2>{{ review.title }}</h2>
+        <img src="{{ review.poster.url }}" alt="{{ review.title }} Poster" style="width: 300px";>
+        <p>{{ review.summary }}</p>
+      </div>
+    {% empty %}
+      <p>No reviews found.</p>
+    {% endfor %}
+  </section>
+{% endblock %}

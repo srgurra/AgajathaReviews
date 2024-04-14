@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+  }
+  
+  .film {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 94%;
+    height: 300px; /* Updated height */
+    background: #111111;
+    overflow: hidden;
+  }
+  
+  .film::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    width: 8px;
+    height: 8px;
+    background: #5e5e5e;
+    box-shadow: var(--box-shadow-values);
+  }
+  
+  .film::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 0px;
+    width: 8px;
+    height: 8px;
+    background: #5e5e5e;
+    box-shadow: var(--box-shadow-values);
+  }
+  
+  .film div {
+    width: 300px; /* Updated width */
+    height: 180px; /* Updated height */
+    top: 50%;
+    transform: translate(0%, -50%);
+    margin-left: 4px;
+    box-shadow: inset 0px 0px 10px 0px #b7410e;
+    display: inline-block;
+    margin-top: 150px; /* Updated margin-top */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; /* Use contain to maintain the aspect ratio */
+  }
+  
+  .image-container {
+    width: 300px; /* Updated width */
+    height: 180px; /* Updated height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .movie-poster {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    z-index: 1;
+  }
+  
+  .left {
+    left: 4px;
+  }
+  
+  .right {
+    right: 4px;
+  }
+  

@@ -1,0 +1,42 @@
+from django.urls import path
+from .views import (MovieUpdate, MovieCastUpdate, MovieLanguageUpdate,
+                    MovieOttUpdate,WebSeriesUpdate, MovieReviewUpdate,
+                    MovieList, MovieCastList, MovieLanguageList,
+                    MovieOttList, MovieReviewList, MovieByOTTAPIView,
+                    MovieByLanguageAPIView,MovieByGenreAPIView,
+                    LatestMovies, UniqueGenrePosterAPIView, movie_suggestions,webseries_suggestions,
+                    UniqueLanguagePosterAPIView,TopRatedMoviesAPIView, UniqueOttPosterAPIView, 
+                    FromThisWeekMoviesAPIView, GetReviewersFavs, GetAudienceFavs,MovieGenreList,GetMovieDescription)
+
+urlpatterns = [
+    #path('movies/create', MovieCreate.as_view()),
+    path('movies/update/', MovieUpdate.as_view()),
+    path('webseries/update/', MovieUpdate.as_view()),
+    path('movie_reviews/update/', MovieReviewUpdate.as_view()),
+    path('movie_reviews/all', MovieReviewList.as_view()),
+    path('movie_ott/update/', MovieOttUpdate.as_view()),
+    path('movie_ott/all', MovieOttList.as_view()),
+    path('movie_languages/update/', MovieLanguageUpdate.as_view()),
+    path('movie_languages/all', MovieLanguageList.as_view()),
+    path('movie_genre/all', MovieGenreList.as_view()),
+    path('movie_casts/update/', MovieCastUpdate.as_view()),
+    path('movie_casts/all', MovieCastList.as_view()),
+    path('movies/all', MovieList.as_view()),
+    path('movies/top10latest', LatestMovies.as_view()),
+    path('movies/suggestions', movie_suggestions, name='movie_suggestions'),
+    path('webseries/suggestions', webseries_suggestions, name='webseries_suggestions'),
+    path('movies/toprated', TopRatedMoviesAPIView.as_view(), name='top-rated-movies'),
+    path('movies/past-week', FromThisWeekMoviesAPIView.as_view(), name='movies-past-week'),
+    path('movies/unique-ott-poster', UniqueOttPosterAPIView.as_view(), name='unique-ott-poster'),
+    path('movies/unique-language-poster', UniqueLanguagePosterAPIView.as_view(), name='unique-language-poster'),
+    path('movies/unique-genres-poster', UniqueGenrePosterAPIView.as_view(), name='unique-genre-poster'),
+    path('movies/ott/', MovieByOTTAPIView.as_view(), name='movies-by-ott'),
+    path('movies/languages/', MovieByLanguageAPIView.as_view(), name='movies-by-language'),
+    path('movies/genres/', MovieByGenreAPIView.as_view(), name='movies-by-genre'),
+    path('movies/latest', LatestMovies.as_view(), name='latest-movies'),
+    path('movies/reviewersfavs', GetReviewersFavs.as_view(), name= 'reviewer-favs'),
+    path('movies/audiencefavs', GetAudienceFavs.as_view(), name= 'audience-favs'),
+    path('movies/description/', GetMovieDescription.as_view(), name= 'movie-description'),
+
+]
+    

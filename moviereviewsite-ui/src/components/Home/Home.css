@@ -1,0 +1,15 @@
+.heading-strip {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+  }
+  
+  .heading-strip::before {
+    content: "";
+    width: 4px;
+    height: 100%;
+    background-color: #333;
+    margin-right: 10px;
+    background-color: #ED7014; 
+    
+  }

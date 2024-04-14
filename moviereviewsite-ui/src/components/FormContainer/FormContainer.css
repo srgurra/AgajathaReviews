@@ -1,0 +1,126 @@
+.form-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.form-container__content {
+  
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  margin: 20px;
+}
+
+.form-container__links {
+  margin-right: 20px;
+  width: 200px;
+}
+
+.form-container__divider {
+  border-left: 1px solid #ddd;
+  margin: 0 20px;
+}
+
+.form-container__form {
+  flex-grow: 1;
+}
+.field {
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+}
+.form-container__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+  
+.form-container__form > div {
+    margin-bottom: 20px;
+}
+  
+.form-container__form label {
+    display: flex;
+    width: 100%;
+}
+  
+.form-container__form input {
+    display: flex;
+    width: 100%;
+    padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  justify-content: space-evenly;
+}
+.form-container__form select {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 4px;
+justify-content: space-evenly;
+}
+.form-container__form textarea {
+    display: flex;
+    width: 100%;
+    padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  justify-content: space-evenly;
+  height: 100px;
+}
+.form-container__form form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+.form-container__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.form-container__form > div {
+  margin-bottom: 20px;
+}
+
+.form-container__form label {
+  display: flex;
+  width: 100%;
+}
+
+.form-container__form input,
+.form-container__form select,
+.form-container__form textarea {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  justify-content: space-evenly;
+}
+.form-container__form textarea {
+  height: 100px;
+}
+
+.form-container__form form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+
+input[type="file"] {
+  border: 0px;
+}
+
+
+
+

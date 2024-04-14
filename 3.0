@@ -1,0 +1,4 @@
+Requirement already satisfied: django in c:\users\administrator\documents\moviereview\myenv\lib\site-packages (3.2)
+Requirement already satisfied: asgiref<4,>=3.3.2 in c:\users\administrator\documents\moviereview\myenv\lib\site-packages (from django) (3.6.0)
+Requirement already satisfied: pytz in c:\users\administrator\documents\moviereview\myenv\lib\site-packages (from django) (2023.3)
+Requirement already satisfied: sqlparse>=0.2.2 in c:\users\administrator\documents\moviereview\myenv\lib\site-packages (from django) (0.4.3)

@@ -1,0 +1,18 @@
+<!-- myapp/templates/myapp/review_create.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Create a New Movie Review</h1>
+  
+  <section>
+    <form method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Add Review</button>
+    </form>
+    {% if form.errors %}
+      <p class="error">Please correct the errors below.</p>
+    {% endif %}
+  </section>
+{% endblock %}

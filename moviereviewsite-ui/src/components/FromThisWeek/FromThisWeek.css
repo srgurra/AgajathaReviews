@@ -1,0 +1,170 @@
+.movie-slider {
+  margin-top: 100px;
+  margin-bottom:100px;
+} 
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-title {
+  margin: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  
+}
+
+.slider-container {
+  margin: 20px;
+  position: relative;
+
+  overflow: hidden;
+  
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  flex: 0 0 calc(100% / 6);
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+}
+
+.slider-item:last-child {
+  margin-right: 0;
+}
+
+.slider-item-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.slider-item-details {
+  padding: 5px;
+  color: white ;
+}
+
+.slider-item-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.slider-item-description {
+  font-size: 14px;
+}
+
+.slider-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1;
+}
+
+.slider-control-left {
+  left: 0px;
+}
+
+.slider-control-right {
+  right: 0px;
+}
+.slider-item {
+  flex: 0 0 calc(100% / 5); /* Adjust the width of each poster item based on the number of posters per slide */
+  /* Add any other styles you want */
+}
+
+.slider-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ED7014;  /* Set the background color to orange */
+  border: none;
+  color: #fff; /* Set the arrow color to white */
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px; /* Add padding to adjust the size of the arrows */
+  z-index: 1; /* Set a higher z-index to bring the arrows to the forefront */
+}
+
+.slider-control-left {
+  left: 10px; /* Adjust the positioning of the left arrow */
+}
+
+.slider-control-right {
+  right: 10px; /* Adjust the positioning of the right arrow */
+}
+.slider-item {
+  flex: 0 0 calc(100% / 7);
+  margin-right: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 6px black;
+  cursor: pointer;
+}
+
+.slider-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px black;
+}
+
+.slider-item-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.slidertitle-strip {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 10px;
+}
+
+.slidertitle-strip::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: #333;
+  margin-right: 10px;
+  background-color: #ED7014; 
+  
+}
+
+.slidertitle {
+  position: relative;
+  display: inline-block;
+  padding-left: 10px; /* Add some spacing between the stripes and the heading */
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.slidertitle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px; /* Adjust the width of the stripes */
+  height: 100%;
+  background-color: #ED7014;  /* Adjust the color of the stripes */
+}

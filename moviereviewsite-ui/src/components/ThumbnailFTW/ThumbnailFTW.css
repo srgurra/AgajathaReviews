@@ -1,0 +1,39 @@
+.thumbnailftw-container {
+    border-radius: 5px;
+    
+    box-shadow: 0 2px 6px black;
+    background-color: #333;
+    height: 400px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+    
+    
+  }
+  
+ /*  .thumbnail-container img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 8px;
+  } */
+
+  .thumbnailftw-image {
+    max-width: 200px;
+    max-height: 300px;
+    width: auto;
+    height: 100%;
+
+  }
+
+  
+  .thumbnailftw-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: #ED7014;
+  }
+  

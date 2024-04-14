@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.905ab500.css",
+    "main.js": "/static/js/main.b4f52f84.js",
+    "static/js/787.ec083bdf.chunk.js": "/static/js/787.ec083bdf.chunk.js",
+    "static/media/logo.gif": "/static/media/logo.f02c38ef00f775c985a4.gif",
+    "static/media/shasharedem.jpeg": "/static/media/shasharedem.7d44e0fc828d0b612899.jpeg",
+    "static/media/TheGodfather.jpeg": "/static/media/TheGodfather.e2035b5904af95080132.jpeg",
+    "static/media/TheDarkKnight.jpeg": "/static/media/TheDarkKnight.1b72f297e45bd215a919.jpeg",
+    "index.html": "/index.html",
+    "main.905ab500.css.map": "/static/css/main.905ab500.css.map",
+    "main.b4f52f84.js.map": "/static/js/main.b4f52f84.js.map",
+    "787.ec083bdf.chunk.js.map": "/static/js/787.ec083bdf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.905ab500.css",
+    "static/js/main.b4f52f84.js"
+  ]
+}

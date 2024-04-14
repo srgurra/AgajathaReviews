@@ -1,0 +1,11 @@
+Requirement already satisfied: django-pyodbc-azure in c:\users\administrator\documents\moviereview\myenv\lib\site-packages (2.1.0.0)
+Collecting Django<2.2,>=2.1.0
+  Using cached Django-2.1.15-py3-none-any.whl (7.3 MB)
+Requirement already satisfied: pyodbc>=3.0 in c:\users\administrator\documents\moviereview\myenv\lib\site-packages (from django-pyodbc-azure) (4.0.39)
+Requirement already satisfied: pytz in c:\users\administrator\documents\moviereview\myenv\lib\site-packages (from Django<2.2,>=2.1.0->django-pyodbc-azure) (2023.3)
+Installing collected packages: Django
+  Attempting uninstall: Django
+    Found existing installation: Django 3.2
+    Uninstalling Django-3.2:
+      Successfully uninstalled Django-3.2
+Successfully installed Django-2.1.15
